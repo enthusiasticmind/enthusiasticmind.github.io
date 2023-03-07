@@ -3,10 +3,13 @@
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
   <head>
     <style>
       body {
-        background-color: black;
+        background-color: rgb(8, 124, 93);
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -43,21 +46,34 @@
         transform: scale(0.85);
       }
       
-      .biodata {
-        padding: 50px;
-        text-align: center;
-        color: white;
-      }
-      
       .footer {
         background-color: #333;
         color: white;
         text-align: center;
-        top: 100%;
+        position: fixed;
+        width: 206.45vh;
+        overflow: hidden;
+        bottom: 0;
         padding: 14px 16px;
-        bottom: 0%;
-        width: 97.575%;
       }
+
+      .welcome{
+        padding: 8% 10%;
+        font-family: 'Tilt Neon', cursive;
+        
+      }
+
+      .btnopen{
+        position: absolute;
+        top: 46%;
+        left: 38%;
+      }
+
+      .popup2know{
+        justify-content: center;
+        transform: translate(-50%,);
+      }
+
     </style>
   </head>
   <body> 
@@ -68,9 +84,40 @@
       <li><a href="contact.html">Contact</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    
+    <div class="welcome">
+    <h2 class="w1">
+      Student, 10th Grade, Age = 15
+    </h2>
+    <h4 class="w2">
+      P.Skills - HTML, CSS, Python[Intermediate]...
+      <br>Ot.Skills - Professionally Deppresed, Therapist[ Intermediate ]
+    </h4>
+    <div class="btnopen">
+      <button id="btn-open">Read More..</button>
+    </div>
+  </div>
+  <div class="popup2know">
+    <div class="titlepopup">
+      Know More Here
+    </div>
+    <div class="contentpopup">
+      Love 4 Songs &#128420
+      <br>Playlist - <a href="https://open.spotify.com/playlist/0zCsDSiVHFcixUa9b7x3L5" target="_blank">HERE</a>
+      <br>Materialistic Mind with a touch of Enthusiasm<br>Love for Anime & Bodybuilding but Lazy :/ <br>
+      Not a mysogynist. <br>Tate Supporter
+      <div class="btnclose">
+        <button id="btn-close">
+          Dismiss
+        </button>
+      </div>
+    </div>
+  </div>
+
     <div class="footer">
       Copyright &copy; 2023
     </div>
+
   </body>
+  <script>
+  </script>
 </html>
