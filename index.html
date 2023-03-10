@@ -17,7 +17,7 @@
         font-family: monospace;
         font-size: large;
       }
-      
+
       ul {
         list-style-type: none;
         margin: 0;
@@ -25,11 +25,11 @@
         overflow: hidden;
         background-color: #333;
       }
-      
+
       li {
         float: left;
       }
-      
+
       li a {
         display: block;
         color: white;
@@ -38,49 +38,116 @@
         text-decoration: none;
         transition: all 0.2s ease;
       }
-      
+
       li a:hover {
         background-color: #111;
       }
-      
+
       li a:active {
         transform: scale(0.85);
       }
-      
+
       .footer {
         background-color: #333;
         color: white;
         text-align: center;
         position: fixed;
-        width: 206.45vh;
-        overflow: hidden;
+        width: 100%;
         bottom: 0;
-        padding: 14px 16px;
       }
 
       .welcome{
         padding: 8% 10%;
         font-family: 'Tilt Neon', cursive;
-        
+
       }
 
-      .btnopen{
-        position: absolute;
-        top: 46%;
-        left: 38%;
-      }
+      .box {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
 
-      .popup2know{
-        justify-content: center;
-        transform: translate(-50%,);
-      }
+.button {
+  font-size: 1em;
+  padding: 10px 20px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4 s ease-out;
+}
+.button:hover {
+  border-radius: 15px;
+  background: #06D85F;
+  color: #000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 200ms ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 30px;
+  top: 25%;
+  background: #fff;
+  border-radius: 30px;
+  width: 30%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
 
     </style>
   </head>
-  <body> 
-    
+  <body>
     <ul>
-      <li><a href="#"></a> Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="news.html">News</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="about.html">About</a></li>
@@ -93,29 +160,31 @@
       P.Skills - HTML, CSS, Python[Intermediate]...
       <br>Ot.Skills - Professionally Deppresed, Therapist[ Intermediate ]
     </h4>
-    <div class="btnopen">
-      <button id="btn-open">Read More..</button>
-    </div>
-  </div>
-  <div class="popup2know">
-    <div class="titlepopup">
-      Know More Here
-    </div>
-    <div class="contentpopup">
-      Love 4 Songs &#128420
-      <br>Playlist - <a href="https://open.spotify.com/playlist/0zCsDSiVHFcixUa9b7x3L5" target="_blank">HERE</a>
-      <br>Materialistic Mind with a touch of Enthusiasm<br>Love for Anime & Bodybuilding but Lazy :/ <br>
-      Not a mysogynist. <br>Tate Supporter
-      <div class="btnclose">
-        <button id="btn-close">
-          Dismiss
-        </button>
-      </div>
-    </div>
   </div>
 
+<!-- know more starts here -->
+  <div class="box">
+    <a class="button" href="#popup1">More...</a>
+  </div>
+
+
+<div id="popup1" class="overlay">
+<div class="popup">
+  <h2>Want to know? Here Read..</h2>
+  <a class="close" href="#">&times;</a>
+  <div class="content">
+    Go Study hoooman...
+  </div>
+</div>
+</div>
+
+
+
+
+
+
     <div class="footer">
-      Copyright &copy; 2023
+      <h3>Copyright &copy; 2023</h3>
     </div>
 
   </body>
