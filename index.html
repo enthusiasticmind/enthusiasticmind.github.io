@@ -63,25 +63,34 @@
       }
 
       .box {
-  width: 40%;
-  margin: 0 auto;
-  text-align: center;
+        margin: 23% 38%;
+  width: 1%;
+  position: absolute;
+  justify-content: center;
 }
 
 .button {
-  font-size: 1em;
+  font-size: 1.25em;
   padding: 10px 20px;
+  position: relative;
+  top: 1px;
   color: #fff;
   border: 2px solid #06D85F;
   border-radius: 50px;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.4s ease-out;
+  transition: all 0.2s ease-out;
 }
 .button:hover {
   border-radius: 15px;
   background: #06D85F;
   color: #000;
+  font-weight: bolder;
+}
+
+.button:active{
+  padding: 7px 15px;
+  transition: 50ms;
 }
 
 .overlay {
@@ -128,6 +137,7 @@
 }
 .popup .close:hover {
   color: #06D85F;
+  font-weight: bolder;
 }
 .popup .content {
   max-height: 30%;
@@ -142,6 +152,34 @@
     width: 70%;
   }
 }
+
+    #softbtn{
+      text-align: center;
+      padding: 100px 10px;
+    }
+
+
+
+    #softbtn a{
+      text-decoration: none;
+      color:  #ffffff;
+      font-weight: bold;
+      padding: 20px 20px;
+      border-radius: 38px;
+      background: linear-gradient(225deg, #117d61, #0e6952);
+box-shadow:  -7px 7px 17px #073328,
+             7px -7px 17px #19b78e;
+}
+
+    #softbtn a:active{
+      transition: all 0.5s ease;
+      border-radius: 38px;
+background: #10755b;
+box-shadow: inset 11px -11px 22px #073328,
+            inset -11px 11px 22px #19b78e;
+    }
+
+
 
     </style>
   </head>
@@ -177,9 +215,13 @@
   </div>
 </div>
 </div>
-
-
-
+<!-- know more ends here -->
+<!-- soft button -->
+<div id="softbtn">
+<a href="#">
+  Click Me!
+</a>
+</div>
 
 
 
